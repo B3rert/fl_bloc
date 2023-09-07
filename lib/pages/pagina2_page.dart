@@ -41,7 +41,9 @@ class Pagina2Page extends StatelessWidget {
               child: const Text('Añadir Profesion',
                   style: TextStyle(color: Colors.white)),
               color: Colors.blue,
-              onPressed: () {}),
+              onPressed: () {
+                userBloc.add(ChangeProfession("New profession"));
+              }),
         ],
       )),
     );
